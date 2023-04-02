@@ -1,0 +1,70 @@
+/*
+変数やmixinを定義する。
+mixinは別ブロックでも使用するcssを定義する
+*/
+
+// color
+$gray-6: #10141A;
+$gray-5: #3F3F3F;
+$gray-4: #9E9E9E;
+$gray-3: #C5C5C5;
+$gray-2: #ECECEC;
+$gray-1: #F7F7F8;
+
+$white-1: #ffffff;
+
+$bg-1: #FAFAFA;
+$bg-2: #F0F0F0;
+
+// font-size
+$font-6xl: 72px;
+$font-5xl: 56px;
+$font-4xl: 48px;
+$font-3xl: 42px;
+$font-2xl: 32px;
+$font-xl: 28px;
+$font-lg: 24px;
+
+
+// media-query
+@mixin tb() {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+// mixin
+@mixin font($size) {
+  font-size: $size;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $gray-6;
+}
+
+@mixin font-base($size, $weight) {
+  font-size: $size;
+  line-height: 1.6;
+  font-weight: $weight;
+  color: $gray-5;
+  @include pc {
+    font-size: 16px;
+  }
+}
+
+@mixin font-xs($weight) {
+  font-size: 10px;
+  line-height: 1;
+  font-weight: $weight;
+  letter-spacing: 0.2em;
+  color: $gray-5;
+  @include pc {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+}

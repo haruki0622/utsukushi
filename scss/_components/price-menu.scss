@@ -1,0 +1,95 @@
+@use "../_base/global.scss" as *;
+
+.PriceMenu {
+  @include pc {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+.PriceMenu__Inner {
+  padding: 32px 16px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+  @include pc {
+    padding: 36px;
+  }
+}
+.PriceMenu__Label {
+  font-size: 12px;
+  color: $gray-5;
+  text-align: center;
+  @include pc {
+    margin-bottom: 4px;
+  }
+}
+.PriceMenu__Title {
+  font-size: 24px;
+  text-align: center;
+  color: $gray-6;
+  letter-spacing: -0.04em;
+  @include pc {
+    font-size: 32px;
+  }
+}
+
+.PriceMenu__PriceWrap {
+  padding: 24px 0;
+  border-top: 1px solid $gray-3;
+  border-bottom: 1px solid $gray-3;
+  margin: 18px 0;
+}
+
+.PriceMenu__Price {
+  font-size: 18px;
+  color: $gray-5;
+  text-align: center;
+  margin-bottom: 24px;
+  @include pc {
+    font-size: 20px;
+  }
+}
+
+.PriceMenu__LargeNumber {
+  font-family: "Open Sans", sans-serif;
+  font-size: 74px;
+  line-height: 0.77;
+  margin: 0 4px;
+  color: $gray-6;
+  @include pc {
+    font-size: 100px;
+    margin: 0 2px;
+  }
+}
+
+.PriceMenu__Description {
+  @include font-base(14px, 400);
+  @include pc {
+    @include font-base(15px, 400);
+  }
+}
+
+.PriceMenu__FeatureWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.PriceMenu__FeatureItem {
+  display: flex;
+  flex-direction: row;
+  column-gap: 14px;
+  align-items: center;
+}
+
+.PriceMenu__FeatureIcon {
+  width: 14px;
+  @include pc {
+    width: 18px;
+  }
+}
+.PriceMenu__FeatureTitle {
+  color: $gray-5;
+  font-size: 15px;
+}

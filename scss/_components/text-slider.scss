@@ -1,0 +1,72 @@
+@use "../_base/global.scss" as *;
+
+.TextSlider {
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: 24px;
+  overflow: hidden;
+  @include pc {
+    margin-top: -240px;
+  }
+}
+
+.TextSlider__Title {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  column-gap: 24px;
+  flex: 0 0 auto;
+  flex-direction: row;
+  padding-right: 25px;
+  padding-left: 25px;
+  line-height: 100%;
+  color: $gray-6;
+  @include pc {
+    font-size: 142px;
+    column-gap: 54px;
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+}
+
+.TextSlider__Title:nth-child(odd) {
+  animation: loop 50s -25s linear infinite;
+  @include pc {
+    animation: loop 70s -35s linear infinite;
+  }
+}
+
+.TextSlider__Title:nth-child(even) {
+  animation: loop2 50s linear infinite;
+  @include pc {
+    animation: loop2 70s linear infinite;
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.TextSlider__Stroke {
+  -webkit-text-stroke: 1px $gray-6;
+  color: transparent;
+  @include pc {
+    -webkit-text-stroke: 2px $gray-6;
+  }
+}

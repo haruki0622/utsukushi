@@ -1,0 +1,61 @@
+@use "../_base/global.scss" as *;
+
+.Footer {
+  background-color: $gray-6;
+  margin-top: 100px;
+}
+
+.Footer__Inner {
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  @include pc {
+    flex-direction: row;
+    column-gap: 170px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+}
+
+.Footer__LogoWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.Footer__Logo {
+  width: 100px;
+  @include pc {
+    width: 120px;
+  }
+}
+.Footer__Instagram {
+  width: 24px;
+  @include pc {
+    width: 28px;
+  }
+}
+
+.Footer__LinkWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  margin-top: 42px;
+  @include pc {
+    flex-direction: row;
+    column-gap: 48px;
+    margin-top: 0;
+  }
+}
+
+.Footer__Link {
+  font-size: 14px;
+  color: $gray-2;
+  &:hover {
+    color: $gray-4;
+  }
+  @include pc {
+    font-size: 16px;
+  }
+}

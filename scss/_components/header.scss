@@ -1,0 +1,25 @@
+@use "../_base/global.scss" as *;
+
+.Header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.Header__Inner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include pc {
+    height: 80px;
+  }
+}
+
+.Header__Logo {
+  width: 80px;
+  @include pc {
+    width: 120px;
+  }
+}

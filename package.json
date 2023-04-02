@@ -1,0 +1,21 @@
+{
+  "name": "kwschool-web-writing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "destyle.css": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
+}

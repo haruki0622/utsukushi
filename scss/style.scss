@@ -1,0 +1,18 @@
+@use "./_base/base.scss";
+
+// riset.css
+@use "../node_modules/destyle.css/destyle.css";
+
+// components
+@use "./_components/header.scss";
+@use "./_components/fv.scss";
+@use "./_components/text-slider.scss";
+@use "./_components/concept.scss";
+@use "./_components/service.scss";
+@use "./_components/client.scss";
+@use "./_components/features.scss";
+@use "./_components/price.scss";
+@use "./_components/price-menu.scss";
+@use "./_components/faq.scss";
+@use "./_components/contact.scss";
+@use "./_components/footer.scss";

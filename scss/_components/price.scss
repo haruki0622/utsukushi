@@ -1,0 +1,36 @@
+@use "../_base/global.scss" as *;
+
+.Price {
+  margin-top: 100px;
+  background-color: $bg-1;
+}
+
+.Price__Inner {
+  padding: 42px 20px;
+  margin: 0 20px;
+  @include pc {
+    padding: 100px 20px;
+  }
+}
+
+.Price__TextWrap {
+  margin-bottom: 24px;
+  @include pc {
+    margin-bottom: 38px;
+  }
+}
+.Price__Label {
+  @include font-xs(500);
+  margin-bottom: 14px;
+  text-align: center;
+  @include pc {
+    margin-bottom: 32px;
+  }
+}
+.Price__Title {
+  @include font($font-lg);
+  text-align: center;
+  @include pc {
+    @include font(52px);
+  }
+}

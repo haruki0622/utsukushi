@@ -1,0 +1,109 @@
+@use "../_base/global.scss" as *;
+
+.Faq {
+  margin-top: 100px;
+}
+.Faq__Inner {
+  padding: 0 16px;
+}
+.Faq__TextWrap {
+  margin-bottom: 24px;
+  @include pc {
+    margin-bottom: 38px;
+  }
+}
+.Faq__Label {
+  @include font-xs(500);
+  margin-bottom: 14px;
+  text-align: center;
+  @include pc {
+    margin-bottom: 18px;
+  }
+}
+
+.Faq__Title {
+  @include font($font-lg);
+  text-align: center;
+  @include pc {
+    @include font(52px);
+  }
+}
+
+.Faq__List {
+  display: flex;
+  flex-direction: column;
+  @include pc {
+    max-width: 790px;
+    margin: 0 auto;
+  }
+}
+
+.Faq__Item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  border-bottom: 1px solid $gray-2;
+  &:first-child {
+    border-top: 1px solid $gray-2;
+  }
+  cursor: pointer;
+  @include pc {
+    padding: 32px 0;
+  }
+}
+
+.Faq__ItemImage {
+  width: 14px;
+  @include pc {
+    width: 18px;
+  }
+}
+
+.Faq__ItemQues {
+  position: relative;
+  font-size: 16px;
+  color: $gray-6;
+  @include pc {
+    font-size: 20px;
+  }
+  color: $gray-6;
+}
+
+.Faq__ItemQues::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  /*   要素の動きを指定 */
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px $gray-5;
+  border-right: solid 2px $gray-5;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  /* transform: rotateで要素の角度を指定 */
+}
+
+.Faq__ItemAnswer {
+  font-size: 14px;
+  margin-top: 14px;
+  padding-left: 8px;
+  line-height: 1.4;
+  color: $gray-5;
+  @include pc {
+  font-size: 18px;
+    line-height: 1.6;
+    margin-top: 24px;
+    padding-left: 12px;
+    padding-right: 64px;
+  }
+}
+
+.Faq__Item .open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+  /* openクラスがついた時の要素の角度を指定 */
+}
