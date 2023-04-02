@@ -27,7 +27,7 @@
   }
 }
 .Client__Title {
-  @include font(26px);
+  @include font(24px);
   @include pc {
     @include font(52px);
   }
@@ -76,7 +76,7 @@
 }
 
 .Client__WorkedTitle {
-  @include font-base(20px, 500);
+  @include font-base(18px, 500);
   margin-bottom: 16px;
   @include pc {
     // @include font-base(26px, 500);

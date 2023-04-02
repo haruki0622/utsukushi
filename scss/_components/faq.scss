@@ -22,7 +22,7 @@
 }
 
 .Faq__Title {
-  @include font(26px);
+  @include font(24px);
   text-align: center;
   @include pc {
     @include font(52px);
