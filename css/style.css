@@ -598,7 +598,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Concept__Title {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -774,7 +774,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Service__Title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -907,7 +907,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Client__Title {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -971,7 +971,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Client__WorkedTitle {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 500;
   color: #3F3F3F;
@@ -1088,7 +1088,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__Title {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -1160,7 +1160,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__ItemTitle {
-  font-size: 32px;
+  font-size: 24px;
   color: #10141A;
   text-transform: uppercase;
 }
@@ -1242,7 +1242,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Price__Title {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -1423,7 +1423,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Faq__Title {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;
@@ -1558,7 +1558,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Contact__Title {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.5;
   font-weight: 500;
   color: #10141A;

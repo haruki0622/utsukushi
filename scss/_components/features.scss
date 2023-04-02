@@ -27,7 +27,7 @@
   }
 }
 .Features__Title {
-  @include font(32px);
+  @include font(26px);
   @include pc {
     @include font(52px);
   }
@@ -83,7 +83,7 @@
 }
 
 .Features__ItemTitle {
-  font-size: 32px;
+  font-size: 24px;
   color: $gray-6;
   text-transform: uppercase;
   @include pc {

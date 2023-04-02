@@ -22,7 +22,7 @@
   }
 }
 .Concept__Title {
-  @include font($font-2xl);
+  @include font(28px);
   font-weight: 400;
   word-break: keep-all;
   overflow-wrap: break-word;
