@@ -27,7 +27,7 @@
   }
 }
 .Features__Title {
-  @include font($font-lg);
+  @include font(32px);
   @include pc {
     @include font(52px);
   }
@@ -62,7 +62,7 @@
 .Features__ItemNumber {
   width: 20%;
   color: $gray-6;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   @include pc {
     width:auto;
@@ -83,7 +83,7 @@
 }
 
 .Features__ItemTitle {
-  font-size: 26px;
+  font-size: 32px;
   color: $gray-6;
   text-transform: uppercase;
   @include pc {
@@ -93,7 +93,7 @@
 }
 
 .Features__ItemSubTitle {
-  font-size: 12px;
+  font-size: 14px;
   color: $gray-6;
   @include pc {
     margin-bottom: 26px;

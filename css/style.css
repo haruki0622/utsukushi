@@ -576,7 +576,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Concept__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -598,9 +598,9 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Concept__Title {
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
   font-weight: 400;
   word-break: keep-all;
@@ -611,7 +611,7 @@ mixinは別ブロックでも使用するcssを定義する
   .Concept__Title {
     font-size: 46px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
     font-weight: 400;
     text-align: center;
@@ -754,7 +754,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Service__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -774,9 +774,9 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Service__Title {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -822,6 +822,19 @@ mixinは別ブロックでも使用するcssを定義する
 }
 @media (min-width: 1025px) {
   .Service__SpImage {
+    border-radius: 12px;
+    max-width: 400px;
+    display: none;
+  }
+}
+
+.Service__PcImage {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .Service__PcImage {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 12px;
     max-width: 400px;
   }
@@ -874,7 +887,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Client__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -894,16 +907,16 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Client__Title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
 }
 @media (min-width: 1025px) {
   .Client__Title {
     font-size: 52px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
   }
 }
@@ -958,7 +971,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Client__WorkedTitle {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.6;
   font-weight: 500;
   color: #3F3F3F;
@@ -973,7 +986,7 @@ mixinは別ブロックでも使用するcssを定義する
   .Client__WorkedTitle {
     font-size: 26px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
     margin-bottom: 24px;
   }
@@ -1055,7 +1068,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -1075,16 +1088,16 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__Title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
 }
 @media (min-width: 1025px) {
   .Features__Title {
     font-size: 52px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
   }
 }
@@ -1122,7 +1135,7 @@ mixinは別ブロックでも使用するcssを定義する
 .Features__ItemNumber {
   width: 20%;
   color: #10141A;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
 }
 @media (min-width: 1025px) {
@@ -1147,7 +1160,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__ItemTitle {
-  font-size: 26px;
+  font-size: 32px;
   color: #10141A;
   text-transform: uppercase;
 }
@@ -1159,7 +1172,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Features__ItemSubTitle {
-  font-size: 12px;
+  font-size: 14px;
   color: #10141A;
 }
 @media (min-width: 1025px) {
@@ -1208,7 +1221,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Price__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -1229,9 +1242,9 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Price__Title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
   text-align: center;
 }
@@ -1239,7 +1252,7 @@ mixinは別ブロックでも使用するcssを定義する
   .Price__Title {
     font-size: 52px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
   }
 }
@@ -1389,7 +1402,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Faq__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -1410,9 +1423,9 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Faq__Title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
   text-align: center;
 }
@@ -1420,7 +1433,7 @@ mixinは別ブロックでも使用するcssを定義する
   .Faq__Title {
     font-size: 52px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
   }
 }
@@ -1524,7 +1537,7 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Contact__Label {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -1545,9 +1558,9 @@ mixinは別ブロックでも使用するcssを定義する
 }
 
 .Contact__Title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: #10141A;
   text-align: center;
 }
@@ -1555,7 +1568,7 @@ mixinは別ブロックでも使用するcssを定義する
   .Contact__Title {
     font-size: 52px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #10141A;
   }
 }

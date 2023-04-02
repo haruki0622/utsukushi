@@ -43,7 +43,7 @@ $font-lg: 24px;
 @mixin font($size) {
   font-size: $size;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: $gray-6;
 }
 
@@ -58,7 +58,7 @@ $font-lg: 24px;
 }
 
 @mixin font-xs($weight) {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   font-weight: $weight;
   letter-spacing: 0.2em;

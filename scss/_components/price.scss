@@ -28,7 +28,7 @@
   }
 }
 .Price__Title {
-  @include font($font-lg);
+  @include font(32px);
   text-align: center;
   @include pc {
     @include font(52px);

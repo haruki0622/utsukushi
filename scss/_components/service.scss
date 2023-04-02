@@ -35,7 +35,7 @@
   }
 }
 .Service__Title {
-  @include font($font-lg);
+  @include font(28px);
   word-break: keep-all;
   overflow-wrap: break-word;
   margin-bottom: 18px;
@@ -69,18 +69,20 @@
   @include pc {
     border-radius: 12px;
     max-width: 400px;
+    display: none;
   }
 }
 
-// .Service__PcImage {
-//   display: none;
-//   @include pc {
-//     display: block;
-//     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-//     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-//     border-radius: 12px;
-//   }
-// }
+.Service__PcImage {
+  display: none;
+  @include pc {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 12px;
+    max-width: 400px;
+  }
+}
 
 .js-Servcie__SpImage {
   animation: imgfadeService 4s infinite;
